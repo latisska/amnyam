@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <meta name="description" content="Сайт о любимом персонаже Ам Няме — истории, леденцы и весёлые факты.">
+    <meta name="keywords" content="Ам Ням, Cut the Rope, леденцы, игра, персонаж">
+    <meta name="author" content="Алиса">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">Am nyam</div>
+      <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+       </nav>
+    <div class="burger">&#9776;</div>
+</header>
+
+<main class="main">
+    <h1>Это сайт</h1>
+    <p>Здесь нет ничего такого</p>
+
+    <div class="cards">
+            <div class="card">
+                <h3>Cut the Rope</h3>
+                <p>Это популярная видеоигра-головоломка с Ам нямом</p>
+            </div>
+            <div class="card">
+                <h3>Леденцы</h3>
+                <p>Ам Ням известен своей страстью к леденцам.</p>
+            </div>
+            <div class="card">
+                <h3>Леденец украли</h3>
+                <p>Ам Ням будет расстроен и сделает грустное лицо.</p>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="footer-col">
+            <h4>О компании</h4>
+            <p>Мы специализируемся на изготовлении леденцов Ам няма</p>
+    </div>
+        <div class="footer-col">
+            <h4>Контакты</h4>
+            <p>+7 (555) 555-55-55</p>
+            <p>Amnyam@nyam.ru</p>
+        </div>
+    </footer>
+
+    <script>
+
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
