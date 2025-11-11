@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас</title>
+    <meta name="description" content="Описание сайта с Ам нямом">
+    <meta name="keywords" content="О нас, подробнее, о сайте">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="logo">Am nyam</div>
+      <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="index.html" class="active">Главная</a></li>
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="contact.html">Контакты</a></li>
+        </ul>
+       </nav>
+    <div class="burger">&#9776;</div>
+</header>
+
+
+<footer class="footer">
+    <div class="footer-col">
+            <h4>О компании</h4>
+            <p>Мы специализируемся на изготовлении леденцов Ам няма</p>
+    </div>
+        <div class="footer-col">
+            <h4>Контакты</h4>
+            <p>+7 (555) 555-55-55</p>
+            <p>Amnyam@nyam.ru</p>
+        </div>
+    </footer>
+
+    <script>
+
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
